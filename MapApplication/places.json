@@ -3,42 +3,42 @@
         {
             "title" : "Long Beach",
             "latitude" : 33.46,
-            "longitude" : 118.11,
+            "longitude" : -118.11,
         },
         {
             "title" : "Los Angeles",
             "latitude" : 34.3,
-            "longitude" : 118.15,
+            "longitude" : -118.15,
         },
         {
             "title" : "Oakland",
             "latitude" : 37.48,
-            "longitude" : 122.16,
+            "longitude" : -122.16,
         },
         {
             "title" : "Sacramento",
             "latitude" : 38.35,
-            "longitude" : 121.30,
+            "longitude" : -121.30,
         },
         {
             "title" : "San Diego",
             "latitude" : 32.42,
-            "longitude" : 117.10,
+            "longitude" : -117.10,
         },
         {
             "title" : "San Francisco",
             "latitude" : 37.47,
-            "longitude" : 122.26,
+            "longitude" : -122.26,
         },
         {
             "title" : "San Jose",
             "latitude" : 37.20,
-            "longitude" : 121.53,
+            "longitude" : -121.53,
         },
         {
             "title" : "Fresno",
             "latitude" : 36.44,
-            "longitude" : 119.48,
+            "longitude" : -119.48,
         }
     ]
 }
