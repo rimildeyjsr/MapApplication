@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         
         // Create a GMSCameraPosition that tells the map to display the
         // california map
-        let camera = GMSCameraPosition.camera(withLatitude: 36.77, longitude: -119.41, zoom: 5.0)
+        let camera = GMSCameraPosition.camera(withLatitude: 36.77, longitude: -119.41, zoom: 6.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         
