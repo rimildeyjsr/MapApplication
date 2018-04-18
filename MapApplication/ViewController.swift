@@ -29,35 +29,47 @@ class ViewController: UIViewController {
         
         // Load the contents of the file into an NSData object
         let jsonData = NSData(contentsOfFile: path!)
-        do {
+        
+        do
+        {
+            // Serialize the jsonData object to make a Json object
+            let jsonResult = try JSONSerialization.jsonObject(with: jsonData! as Data, options: JSONSerialization.ReadingOptions.allowFragments)
                     
-                // Serialize the jsonData object to make a Json object
-                let jsonResult = try JSONSerialization.jsonObject(with: jsonData! as Data, options: JSONSerialization.ReadingOptions.allowFragments)
-                    
-                json = (jsonResult as? [String : AnyObject])!
-
-                } catch {
-                    print("Problem converting jsonResult to dictionary")
-            }
+            json = (jsonResult as? [String : AnyObject])!
+        }
+        catch
+        {
+            print("Problem converting jsonResult to dictionary")
+        }
         
         // Create a GMSCameraPosition that tells the map to display the
         // california map
         let camera = GMSCameraPosition.camera(withLatitude: 36.77, longitude: -119.41, zoom: 6.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
         
-        // Creates a marker in the center of the map.
+        let routePath = GMSMutablePath()
         
+        // Creates a markers for the cities
         for city in json["cities"] as! [AnyObject] {
+            let lat = city["latitude"] as! Double
+            let long = city["longitude"] as! Double
+            let cityName = city["title"] as? String
+            
             let marker = GMSMarker()
-            marker.position = CLLocationCoordinate2D(latitude: city["latitude"] as! Double, longitude: city["longitude"] as! Double)
-            marker.title = city["title"] as? String
+            
+            marker.position = CLLocationCoordinate2D(latitude: lat, longitude: long)
+            marker.title = cityName
             marker.map = mapView
+            
+            routePath.addLatitude(lat, longitude: long)
         }
         
+        let polyline = GMSPolyline(path: routePath)
+        polyline.strokeColor = .green
+        polyline.strokeWidth = 2.0
+        polyline.map = mapView
+        
+        view = mapView
         
     }
-        
-   
 }
-
