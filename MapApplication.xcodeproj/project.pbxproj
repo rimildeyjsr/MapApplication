@@ -11,6 +11,7 @@
 		5C04015020870A7C00DCED8C /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C04014D20870A7B00DCED8C /* GoogleMapsCore.framework */; };
 		5C04015120870A7C00DCED8C /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C04014E20870A7C00DCED8C /* GoogleMapsBase.framework */; };
 		5C04015320870AB400DCED8C /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C04015220870AB400DCED8C /* GoogleMaps.bundle */; };
+		5C04015520870C8F00DCED8C /* places.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C04015420870C8F00DCED8C /* places.json */; };
 		5CC84F692087026700A3E73F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC84F682087026700A3E73F /* AppDelegate.swift */; };
 		5CC84F6B2087026700A3E73F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC84F6A2087026700A3E73F /* ViewController.swift */; };
 		5CC84F6E2087026700A3E73F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC84F6C2087026700A3E73F /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		5C04014D20870A7B00DCED8C /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
 		5C04014E20870A7C00DCED8C /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
 		5C04015220870AB400DCED8C /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		5C04015420870C8F00DCED8C /* places.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = places.json; sourceTree = "<group>"; };
 		5CC84F652087026700A3E73F /* MapApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC84F682087026700A3E73F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CC84F6A2087026700A3E73F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				5CC84F682087026700A3E73F /* AppDelegate.swift */,
 				5CC84F6A2087026700A3E73F /* ViewController.swift */,
+				5C04015420870C8F00DCED8C /* places.json */,
 				5CC84F6C2087026700A3E73F /* Main.storyboard */,
 				5CC84F6F2087026700A3E73F /* Assets.xcassets */,
 				5CC84F712087026700A3E73F /* LaunchScreen.storyboard */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC84F732087026700A3E73F /* LaunchScreen.storyboard in Resources */,
+				5C04015520870C8F00DCED8C /* places.json in Resources */,
 				5CC84F702087026700A3E73F /* Assets.xcassets in Resources */,
 				5CC84F6E2087026700A3E73F /* Main.storyboard in Resources */,
 				5C04015320870AB400DCED8C /* GoogleMaps.bundle in Resources */,
